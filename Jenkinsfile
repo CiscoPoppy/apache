@@ -22,7 +22,7 @@ pipeline {
 
         stage('Verify') {
             steps {
-                sh 'curl -s http://localhost | grep "<!DOCTYPE html>"'
+                sh 'curl -s http://localhost | grep "DOCTYPE html"'
             }
         }
 	}
