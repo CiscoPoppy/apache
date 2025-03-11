@@ -18,8 +18,8 @@ sudo systemctl enable apache2
 # Create a custom index page
 echo "Creating custom index page..."
 
-echo " " > /var/www/html/index.html
-cat index.html > /var/www/html/index.html
+echo " " | sudo tee /var/www/html/index.html
+cat index.html | sudo tee /var/www/html/index.html
 
 
 # Restart Apache
